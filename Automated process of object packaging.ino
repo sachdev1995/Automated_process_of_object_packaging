@@ -190,7 +190,7 @@ Serial.println("2nd conveyor stopped delay");
 }
 else
 {
-Serial.println("box  not detected");
+Serial.println("box  not detected..");
 }
 
 /*  if(count2==2)
@@ -207,9 +207,10 @@ Serial.println("2nd conveyor stopped");
   */
 }
 
+/* Added for the getting distance */
 int getDistance (int initPin, int echoPin)
 {
-
+ Serial.println("Distance \n");
  digitalWrite(initPin, HIGH);
  delayMicroseconds(10); 
  digitalWrite(initPin, LOW); 
